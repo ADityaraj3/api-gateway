@@ -12,6 +12,8 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { CodeforcesModule } from './modules/codeforces/codeforces.module';
 import { TagsModule } from './modules/tags/tags.module';
 import { LeetcodeModule } from './modules/leetcode/leetcode.module';
+import { GeeksForGeeksModule } from './modules/geeks-for-geeks/geeks-for-geeks.module';
+import { HackerrankModule } from './modules/hackerrank/hackerrank.module';
 
 @Module({
   imports: [
@@ -50,7 +52,9 @@ import { LeetcodeModule } from './modules/leetcode/leetcode.module';
     AuthModule,
     CodeforcesModule,
     LeetcodeModule,
-    TagsModule
+    TagsModule,
+    GeeksForGeeksModule,
+    HackerrankModule
   ],
   controllers: [AppController],
   providers: [AppService, ConfigService],
