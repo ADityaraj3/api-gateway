@@ -27,7 +27,11 @@ import { HackerrankModule } from './modules/hackerrank/hackerrank.module';
       username: process.env.db_username,
       password: process.env.db_password,
       database: process.env.db_name,
-      dialectOptions: {},
+      dialectOptions: {
+        ssl: {
+          require: true,
+        }
+      },
       models: [
         UserModel,
         PermissionModel,
