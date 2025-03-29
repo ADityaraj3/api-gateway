@@ -18,6 +18,14 @@ import { RolePermissionMappingModel } from 'src/models/system-config/role-permis
           host: 'localhost',
           port: 3002
         }
+      },
+      {
+        name: 'DATA_AGGREGATION_SERVICE',
+        transport: Transport.TCP,
+        options: {
+          host: 'localhost',
+          port: 3003
+        }
       }
     ]),
     SequelizeModule.forFeature([
